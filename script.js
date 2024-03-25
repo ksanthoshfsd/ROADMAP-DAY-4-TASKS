@@ -1,3 +1,5 @@
+//ROAD MAP DAY 4
+//Q1.1
 //Do the below programs in anonymous function
 //Print odd numbers in an array
 var Result = [];
@@ -100,6 +102,7 @@ function rotateArray(arr, k) {
 console.log(rotated);
 
 
+//Q 1.2
 //Do the below programs in IIFY function
 //Print odd numbers in an array
 
@@ -230,12 +233,13 @@ function rotateArray(arr, k) {
 console.log(rotated);
 
 
+//Q 2.0
 //Do the below programs in ARROW functions
 //Print odd numbers in an array
 
-const number = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+var number = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 function printOddNumbers(arr) {
-    for (let i = 0; i < arr.length; i++) {
+    for (var i = 0; i < arr.length; i++) {
         if (arr[i] % 2 !== 0) console.log(arr[i]);
     }
 }
@@ -244,20 +248,20 @@ printOddNumbers(number);
 
 //Convert all the strings to title caps in a string array
 
-const stringss = ["hello", "world", "how", "are", "you"];
+var stringss = ["hello", "world", "how", "are", "you"];
 
-const convertToTitleCapss = arr => arr.map(str => str.charAt(0).toUpperCase() + str.slice(1).toLowerCase());
-const titleCapss = convertToTitleCapss(stringss);
+var convertToTitleCapss = arr => arr.map(str => str.charAt(0).toUpperCase() + str.slice(1).toLowerCase());
+var titleCapss = convertToTitleCapss(stringss);
 console.log(titleCapss);
 
 
 //Sum of all numbers in an array
 
-const numbersss = [1, 2, 3, 4, 5];
-const sums = sumArray(numbersss);
+var numbersss = [1, 2, 3, 4, 5];
+var sums = sumArray(numbersss);
 function sumArray(arr) {
-    let sums = 0;
-    for (let i = 0; i < arr.length; i++) {
+    var sums = 0;
+    for (var i = 0; i < arr.length; i++) {
         sum += arr[i];
     }
     return sums;
@@ -267,13 +271,13 @@ console.log(sums);
 
 //Return all the prime numbers in an array
 
-const numberssss = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+var numberssss = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 function getPrimeNumbersss(arr) {
-    const primess = [];
-    for (let i = 0; i < arr.length; i++) {
-        let isPrime = true;
-        for (let j = 2; j <= Math.sqrt(arr[i]); j++) {
+    var primess = [];
+    for (var i = 0; i < arr.length; i++) {
+        var isPrime = true;
+        for (var j = 2; j <= Math.sqrt(arr[i]); j++) {
             if (arr[i] % j === 0) {
                 isPrime = false;
                 break;
@@ -283,18 +287,18 @@ function getPrimeNumbersss(arr) {
     }
     return primess;
 }
-const primess = getPrimeNumbersss(numberssss);
+var primess = getPrimeNumbersss(numberssss);
 console.log(primess);
 
 
 //Return all the palindromes in an array
 
-const wordss = ["level", "hello", "radar", "world", "deified"];
-const palindromess = getPalindromes(wordss);
+var wordss = ["level", "hello", "radar", "world", "deified"];
+var palindromess = getPalindromes(wordss);
 function getPalindromes(arr) {
-    const palindromess = [];
-    for (let i = 0; i < arr.length; i++) {
-        const reversedStr = arr[i].split('').reverse().join('');
+    var palindromess = [];
+    for (var i = 0; i < arr.length; i++) {
+        var reversedStr = arr[i].split('').reverse().join('');
         if (arr[i] === reversedStr) palindromess.push(arr[i]);
     }
     return palindromess;
